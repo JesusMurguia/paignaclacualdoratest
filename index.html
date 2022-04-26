@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="./index.js"></script>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Frontend Mentor | Intro section with dropdown navigation</title>
+	</head>
+	<body>
+		<nav>
+			<img src="./images/logon.png" alt="" />
+			<div class="nav-dropdown">
+				<ul>
+					<li><a href="#nicotina" class="btn">Nicotina</a></li>
+					<li><a href="#metabolismo" class="btn">Metabolismo</a></li>
+					<li><a href="#genes" class="btn">Genes</a></li>
+					<li>
+						<div class="dropdown-container" data-dropdown-desktop>
+							<a href="#" class="btn dropdown-btn">Ayuda</a>
+							<div class="dropdown-content left">
+								<ul class="dropdown-list">
+									<li>
+										<a href="#razones" class="btn"
+											><span><img src="./images/icon-info.svg" alt="" class="icon" /></span> Razones para dejar de
+											fumar</a
+										>
+									</li>
+									<li>
+										<a href="#tips" class="btn"
+											><span><img src="./images/icon-list.svg" alt="" class="icon" /></span>Tips para lidiar con el
+											deseo de fumar</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="nav-mobile" data-nav-mobile>
+				<div class="nav-mobile-content" data-nav-mobile-content>
+					<button class="btn"><img src="./images/icon-close-menu.svg" alt="" data-close-menu /></button>
+					<ul>
+						<li><a href="#nicotina" class="btn nav-link">Nicotina</a></li>
+						<li><a href="#metabolismo" class="btn nav-link">Metabolismo</a></li>
+						<li><a href="#genes" class="btn nav-link">Genes</a></li>
+						<li>
+							<div class="dropdown-container" data-dropdown-mobile>
+								<a href="#" class="btn dropdown-btn">Ayuda</a>
+								<div class="dropdown-content">
+									<ul class="dropdown-list">
+										<li>
+											<a href="#razones" class="btn nav-link"
+												><span><img src="./images/icon-info.svg" alt="" class="icon" /></span>Razones para dejar de
+												fumar</a
+											>
+										</li>
+										<li>
+											<a href="#tips" class="btn nav-link"
+												><span><img src="./images/icon-list.svg" alt="" class="icon" /></span>Tips para lidiar con el
+												deseo de fumar</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button class="btn nav-mobile-btn" data-open-menu>
+				<img src="./images/icon-menu.svg" alt="" />
+			</button>
+			<div class="nav-btns">
+				<a href="https://jesusmurguia.github.io/calculadora-web/index.html" target="_blank" class="btn btn-secondary"
+					>Usar Calculadora</a
+				>
+			</div>
+		</nav>
+		<main>
+			<section id="section1">
+				<div class="container">
+					<div class="learn-more">
+						<h1>¿Fumas?</h1>
+						<p>Conoce tu nivel de dependencia a la nicotina con nuestra calculadora.</p>
+						<a class="btn btn-primary" href="https://jesusmurguia.github.io/calculadora-web/index.html" target="_blank">
+							Usar Calculadora
+						</a>
+					</div>
+					<div class="hero">
+						<img src="./images/calculadora.png" alt="calculadora" />
+					</div>
+				</div>
+			</section>
+			<section id="nicotina">
+				<img src="./images/quit-smoking.png" alt="quit smoking" />
+				<div class="nicotina-info">
+					<h2>
+						¿Sabias que el cigarrillo contiene mas de 4,500 sustancias toxicas y se sabe que 70 de ellas producen
+						cáncer?
+					</h2>
+					<p>Sin embargo la nicotina es la sustancia adictiva del tabaco.</p>
+					<p>Es debido a la nicotina que generas adicción y por eso no puedes dejar de fumar.</p>
+					<p>
+						La nicotina es capaz de llegar a tu cerebro y modificarlo de tal forma que ahora necesites nicotina para
+						sentirte bien o normal.
+					</p>
+					<p>
+						Cuando tu cerebro recibe nicotina se liberan sustancias llamadas neurotransmisores (dopamina, serotonina,
+						norepinefrina, glutamato y GABA) que por un momento hacen que te sientas bien. Sin embargo, después tu
+						cerebro quiere más, es decir, se desarrolla tolerancia y ahora necesitarás más de un cigarro para conseguir
+						lo mismo.
+					</p>
+					<p>
+						Entonces al fumar más, no solo estas modificando tu cerebro, también estas introduciendo miles de sustancias
+						toxicas a tu cuerpo que se ha demostrado que causan enfermedades. La nicotina se encuentra en todos los
+						productos derivados del tabaco y también en el cigarro electrónico o vapeadores, así que cuidado!!
+					</p>
+					<p>El uso de vapeadores también modifica tu cerebro !!!</p>
+				</div>
+			</section>
+			<section id="metabolismo">
+				<img src="./images/harm-of-smoking.png" alt="quit smoking" />
+				<div class="metabolismo-info">
+					<h2>Metabolismo</h2>
+					<p>El humo del cigarro ingresa al cuerpo por la boca y va directo a los pulmones.</p>
+					<p>
+						Los pulmones absorben rápidamente la nicotina y las sustancias de tabaco y llegan a la sangre. La sangre
+						transporta estas sustancias a todo el cuerpo.
+					</p>
+					<p>
+						El hígado es llamado el laboratorio del cuerpo humano, porque en el se hacen reacciones químicas para
+						inactivar compuestos tóxicos y hacerlos de fácil excreción.
+					</p>
+					<p>Entonces en el hígado, estas sustancias se inactivan y pueden ser excretadas por la orina.</p>
+					<p>
+						Sin embargo, existe variabilidad entre individuos en la velocidad de inactivación y excreción de sustancias.
+					</p>
+				</div>
+			</section>
+			<section id="genes">
+				<img src="./images/dna.jpg" alt="genes" />
+				<div class="genes-info">
+					<h2>Genes</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis neque totam perspiciatis harum, odit
+						illum!
+					</p>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde eius, labore iusto cupiditate totam fugit
+						aspernatur libero. Deleniti, quos facere.
+					</p>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde eius, labore iusto cupiditate totam fugit
+						aspernatur libero. Deleniti, quos facere.
+					</p>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde eius, labore iusto cupiditate totam fugit
+						aspernatur libero. Deleniti, quos facere.
+					</p>
+				</div>
+			</section>
+			<section id="razones">
+				<h1>Razones para dejar de fumar</h1>
+				<div class="grid">
+					<div class="card">
+						<h3>Fumar es malo</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos modi dolores asperiores fuga, sint
+							totam?
+						</p>
+					</div>
+					<div class="card">
+						<h3>Fumar es malo</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos modi dolores asperiores fuga, sint
+							totam?
+						</p>
+					</div>
+					<div class="card">
+						<h3>Fumar es malo</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos modi dolores asperiores fuga, sint
+							totam?
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="tips">
+				<h1>Tips para lidiar con el deseo de fumar</h1>
+				<div class="grid-2">
+					<div class="card card-1">
+						<h3>Tip 1</h3>
+						<p>
+							No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No
+							fumes
+						</p>
+					</div>
+					<div class="card card-2">
+						<h3>Tip 2</h3>
+						<p>
+							No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No
+							fumes
+						</p>
+					</div>
+					<div class="card card-3">
+						<h3>Tip 4</h3>
+						<p>
+							No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No
+							fumes
+						</p>
+					</div>
+					<div class="card card-4">
+						<h3>Tip 5</h3>
+						<p>
+							No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No
+							fumes
+						</p>
+					</div>
+					<div class="card card-5">
+						<h3>Tip 3</h3>
+						<p>
+							No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No fumes No
+							fumes
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
